@@ -7,11 +7,11 @@ describe('Dashboard menu', () => {
         return false
     })
 
-    it('application is on', () => {
+    it('should see application is on', () => {
         dashboard.go()
     })
 
-    it('access Book Store Application', () => {
+    it('should access Book Store Application', () => {
         dashboard.go()
         dashboard.goBlockStore()
         bookStore.isBookStorePage()
