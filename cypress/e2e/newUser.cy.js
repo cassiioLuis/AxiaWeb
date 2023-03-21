@@ -11,10 +11,8 @@ describe.skip('New user page', () => {
         newUser.go()
     })
 
-    //Teste de validação de senha inválida/fraca e criação de usuário,
-    //não foram feitos devido ao Captcha.
-    //Pois é uma validação de "Não sou um robo", se desse de automatizar, o captcha não "funcionaria" corretamente.
-    //De modo geral, está validação de captcha é sempre desativada/removida para ambientes de testes.
+    //Teste de validação de senha inválida/fraca e criação de usuário, não foram feitos devido ao Captcha.
+    //Captchas não são automatizaveis, com isso, para ambientes de testes e/ou homologação o captcha é desativado.
 
     
     context('can not register new user with wrogn password', () => {
