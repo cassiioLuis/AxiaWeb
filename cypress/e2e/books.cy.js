@@ -16,7 +16,7 @@ describe('Books validation', () => {
             cy.removeBook(userAdd, addBook.isbn)
         })
 
-        it('shoul see only the new book on collection', () => {
+        it('should see only the new book on collection', () => {
             cy.apiLogin(userAdd)
             books.go()
             books.isBookStorePage()
