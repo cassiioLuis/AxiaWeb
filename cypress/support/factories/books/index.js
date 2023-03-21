@@ -19,5 +19,5 @@ exports.addBook =
 exports.removeBook =
 {
     isbn: '9781449365035',
-    name: 'Speaking JavaScript'
+    name: 'Git Pocket Guide'
 }
