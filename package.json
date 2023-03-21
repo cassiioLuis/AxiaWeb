@@ -11,6 +11,7 @@
     "cypress-multi-reporters": "^1.6.3"
   },
   "scripts": {
-    "cy:run": "npx cypress run --browser chrome"
+    "cy:run": "cypress run --browser chrome",
+    "cy:open": "cypress open"
   }
 }

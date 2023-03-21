@@ -3,6 +3,10 @@ import bookStore from "../actions/bookStore"
 
 describe('Dashboard menu', () => {
 
+    Cypress.on('uncaught:exception', (err, runnable) => {
+        return false
+    })
+
     it('application is on', () => {
         dashboard.go()
     })

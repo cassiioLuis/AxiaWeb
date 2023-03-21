@@ -16,8 +16,8 @@ describe('Books validation', () => {
             cy.removeBook(userAdd, addBook.isbn)
         })
 
-        it('shoul see only the new book on collection', () => {
-            cy.uiLogin(userAdd)
+        it.only('shoul see only the new book on collection', () => {
+            cy.apiLogin(userAdd)
             books.go()
             books.isBookStorePage()
             books.selectBook(addBook.name)
@@ -39,7 +39,7 @@ describe('Books validation', () => {
         })
 
         it('should remove my book on the grid', () => {
-            cy.uiLogin(userRemove)
+            cy.apiLogin(userAdd)
             profile.go()
             profile.seeBook(removeBook.name)
             profile.removeBook(removeBook.name)

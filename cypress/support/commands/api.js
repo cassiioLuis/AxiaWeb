@@ -102,12 +102,14 @@ Cypress.Commands.add('apiLogin', user => {
         body: payload,
     }).then(response => {
         expect(response.status).to.eq(200)
-        // cy.setCookie('userID', `${response.body.userId}`)
-        // cy.setCookie('userName', `${response.body.username}`)
-        // cy.setCookie('expires', `${Cypress.env('expires', response.body.expires)}`)
-        // cy.setCookie('token', `${Cypress.env('token', response.body.token)}`)
+        cy.setCookie('userID', `${response.body.userId}`)
+        cy.setCookie('userName', `${response.body.username}`)
+        cy.setCookie('expires', `${Cypress.env('expires', response.body.expires)}`)
+        cy.setCookie('token', `${Cypress.env('token', response.body.token)}`)
         Cypress.env('userId', response.body.userId)
     })
+
+    cy.reload()
 
 })
 
