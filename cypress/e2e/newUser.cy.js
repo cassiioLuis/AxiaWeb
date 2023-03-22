@@ -10,9 +10,10 @@ describe.skip('New user page', () => {
     beforeEach(() => {
         newUser.go()
     })
+    
 
     //Teste de validação de senha inválida/fraca e criação de usuário, não foram feitos devido ao Captcha.
-    //Captchas não são automatizaveis, com isso, para ambientes de testes e/ou homologação o captcha é desativado.
+    //Captchas não são passíveis de automação, com isso, para realização de automação nesses cenários, deve ser realizada a desativação em ambientes de testes e/ou homologação, permanecendo apenas em ambiente de produção
 
     
     context('can not register new user with wrogn password', () => {

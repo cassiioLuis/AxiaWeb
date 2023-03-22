@@ -16,8 +16,11 @@ module.exports = defineConfig({
         console.log('override after:run');
         await afterRunHook();
       });
+
     },
 
+    experimentalRunAllSpecs: true,
+    
     baseUrl: 'https://demoqa.com',
     viewportWidth: 1920,
     viewportHeight: 1080,
@@ -40,7 +43,8 @@ module.exports = defineConfig({
   },
 
   retries: {
-    runMode: 3
+    runMode: 3,
+    openMode: 0
   },
   
 });
