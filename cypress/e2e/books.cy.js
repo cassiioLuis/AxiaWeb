@@ -1,7 +1,7 @@
 import { userAdd, userRemove, addBook, removeBook } from "../support/factories/books"
-import books from '../actions/bookStore'
-import bookDetails from "../actions/bookDetails"
-import profile from "../actions/profile"
+import books from '../actions/bookStoreActions'
+import bookDetails from "../actions/bookDetailsAction"
+import profile from "../actions/profileActions"
 
 describe('Books validation', () => {
 

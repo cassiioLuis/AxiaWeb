@@ -1,5 +1,5 @@
-import login from '../actions/login'
-import profile from '../actions/profile'
+import login from '../actions/loginActions'
+import profile from '../actions/profileActions'
 import { user } from '../support/factories/login'
 
 describe('Login', () => {

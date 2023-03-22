@@ -1,5 +1,5 @@
-import dashboard from "../actions/dashboard"
-import bookStore from "../actions/bookStore"
+import dashboard from "../actions/dashboardActions"
+import bookStore from "../actions/bookStoreActions"
 
 describe('Dashboard menu', () => {
 

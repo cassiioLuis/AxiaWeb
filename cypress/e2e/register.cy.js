@@ -1,7 +1,7 @@
-import newUser from "../actions/newUser"
+import newUser from "../actions/registerActions"
 import { wrognPass, user, nUser } from "../support/factories/newUser"
 
-describe.skip('New user page', () => {
+describe.skip('Register page', () => {
 
     Cypress.on('uncaught:exception', (err, runnable) => {
         return false
